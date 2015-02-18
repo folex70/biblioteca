@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  nome: MyString
+  descricao: MyText
+  codigo: MyString
+  sbn: MyString
+  autor: MyString
+  idioma: MyString
+  paginacao: MyString
+  imprenta: MyString
+  palavras: MyString
+  chave: MyText
+  data_cadastro: 2015-02-18 14:17:12
+
+two:
+  titulo: MyString
+  nome: MyString
+  descricao: MyText
+  codigo: MyString
+  sbn: MyString
+  autor: MyString
+  idioma: MyString
+  paginacao: MyString
+  imprenta: MyString
+  palavras: MyString
+  chave: MyText
+  data_cadastro: 2015-02-18 14:17:12

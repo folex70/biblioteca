@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Livros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th>Codigo</th>
+      <th>Sbn</th>
+      <th>Autor</th>
+      <th>Idioma</th>
+      <th>Paginacao</th>
+      <th>Imprenta</th>
+      <th>Palavras</th>
+      <th>Chave</th>
+      <th>Data cadastro</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @livros.each do |livro| %>
+      <tr>
+        <td><%= livro.titulo %></td>
+        <td><%= livro.nome %></td>
+        <td><%= livro.descricao %></td>
+        <td><%= livro.codigo %></td>
+        <td><%= livro.sbn %></td>
+        <td><%= livro.autor %></td>
+        <td><%= livro.idioma %></td>
+        <td><%= livro.paginacao %></td>
+        <td><%= livro.imprenta %></td>
+        <td><%= livro.palavras %></td>
+        <td><%= livro.chave %></td>
+        <td><%= livro.data_cadastro %></td>
+        <td><%= link_to 'Show', livro %></td>
+        <td><%= link_to 'Edit', edit_livro_path(livro) %></td>
+        <td><%= link_to 'Destroy', livro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Livro', new_livro_path %>

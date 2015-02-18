@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @livro.titulo %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @livro.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @livro.descricao %>
+</p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @livro.codigo %>
+</p>
+
+<p>
+  <strong>Sbn:</strong>
+  <%= @livro.sbn %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @livro.autor %>
+</p>
+
+<p>
+  <strong>Idioma:</strong>
+  <%= @livro.idioma %>
+</p>
+
+<p>
+  <strong>Paginacao:</strong>
+  <%= @livro.paginacao %>
+</p>
+
+<p>
+  <strong>Imprenta:</strong>
+  <%= @livro.imprenta %>
+</p>
+
+<p>
+  <strong>Palavras:</strong>
+  <%= @livro.palavras %>
+</p>
+
+<p>
+  <strong>Chave:</strong>
+  <%= @livro.chave %>
+</p>
+
+<p>
+  <strong>Data cadastro:</strong>
+  <%= @livro.data_cadastro %>
+</p>
+
+<%= link_to 'Edit', edit_livro_path(@livro) %> |
+<%= link_to 'Back', livros_path %>
