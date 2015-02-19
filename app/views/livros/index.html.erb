@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Livros</h1>
+<h1>Livros</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Titulo</th>
@@ -36,9 +36,11 @@
         <td><%= livro.palavras %></td>
         <td><%= livro.chave %></td>
         <td><%= livro.data_cadastro %></td>
-        <td><%= link_to 'Show', livro %></td>
-        <td><%= link_to 'Edit', edit_livro_path(livro) %></td>
-        <td><%= link_to 'Destroy', livro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <div class="btn-group pull-right">
+	  <td class="btn btn-default btn-sm"><%= link_to 'Exibir', livro %></td>
+	  <td class="btn btn-default btn-sm"><%= link_to 'Editar', edit_livro_path(livro) %></td>
+	  <td class="btn btn-default btn-sm"><%= link_to 'Deletar', livro, method: :delete, data: { confirm: 'Esta certo disso?' } %></td>
+	<div>  
       </tr>
     <% end %>
   </tbody>
@@ -46,4 +48,4 @@
 
 <br>
 
-<%= link_to 'New Livro', new_livro_path %>
+<%= link_to 'Novo Livro', new_livro_path, class: 'btn btn-primary' %>
